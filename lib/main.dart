@@ -8,7 +8,7 @@ void main() {
         backgroundColor: Colors.red,
       ),
       body: Column(
-        children: [Text('内111容'), MyApp(), Circular(), ClipImage()],
+        children: [Text('内111容'), MyApp(),SizedBox(height: 20,) ,Circular(), ClipImage(),LocalImage()],
       ),
     ),
   ));
@@ -63,13 +63,30 @@ class ClipImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: ClipOval(
-        child: Image.network('https://resource.gximg.cn/6d606f_la26zfdc2.jpg',
-        width: 150,
+        child: Image.network(
+          'https://resource.gximg.cn/6d606f_la26zfdc2.jpg',
+          width: 150,
           height: 150,
           fit: BoxFit.cover,
         ),
-
       ),
+    );
+  }
+}
+
+
+class LocalImage extends StatelessWidget {
+  const LocalImage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 150,
+      width: 150,
+      decoration: BoxDecoration(
+        color: Colors.red
+      ),
+      child: Image.asset("images/imageTest.png", fit: BoxFit.fill,),
     );
   }
 }
