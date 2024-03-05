@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "39152109",
+      "name": "044_发现",
+      "font_class": "a-044_faxian",
+      "unicode": "e6e6",
+      "unicode_decimal": 59110
+    },
+    {
+      "icon_id": "39152113",
+      "name": "044_化学",
+      "font_class": "a-044_huaxue",
+      "unicode": "e6e7",
+      "unicode_decimal": 59111
+    },
+    {
+      "icon_id": "39152128",
+      "name": "044_体育",
+      "font_class": "a-044_tiyu",
+      "unicode": "e6e9",
+      "unicode_decimal": 59113
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'svFont.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -25,9 +26,22 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Icon(Icons.search, color: Colors.red, size: 50,),
+        // Icon(Icons.search, color: Colors.red, size: 50,),
+        // SizedBox(height: 40,),
+        // Icon(Icons.home, color: Colors.red, size: 50,),
         SizedBox(height: 40,),
-        Icon(Icons.home, color: Colors.red, size: 50,)
+        Icon(SvenIcon.chemist, color: Colors.red, size: 80,),
+        SizedBox(height: 40,),
+        Icon(SvenIcon.find, color: Colors.pink, size: 80,),
+        SizedBox(height: 40,),
+        Icon(SvenIcon.sport, color: Colors.brown, size: 80,),
+
+
+        // SizedBox(height: 40,),
+        // Icon(SvenIcon.wind, color: Colors.brown, size: 80,),
+        //
+        // SizedBox(height: 40,),
+        // Icon(SvenIcon.gift, color: Colors.brown, size: 80,),
       ],
     );
   }

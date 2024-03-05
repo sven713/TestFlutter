@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "39230204",
+      "name": "风车",
+      "font_class": "fengche",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    },
+    {
+      "icon_id": "39230209",
+      "name": "礼品",
+      "font_class": "lipin",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "39230226",
+      "name": "搜藏",
+      "font_class": "soucang",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    }
+  ]
+}
