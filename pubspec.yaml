@@ -80,7 +80,7 @@ flutter:
        fonts:
          - asset: fonts/iconfont.ttf
   #         style: italic
-     - family: yearFamily
+     - family: yearI
        fonts:
          - asset: fonts/yearfont.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf

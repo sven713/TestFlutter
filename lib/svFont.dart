@@ -24,19 +24,19 @@ class SvenIcon {
 
   static const IconData wind = IconData(
       0xe674,
-      fontFamily: 'yearFamily',
+      fontFamily: 'yearI',
       matchTextDirection: true
   );
 
   static const IconData gift = IconData(
       0xe675,
-      fontFamily: 'yearFamily',
+      fontFamily: 'yearI',
       matchTextDirection: true
   );
 
   static const IconData collection = IconData(
       0xe677,
-      fontFamily: 'yearFamily',
+      fontFamily: 'yearI',
       matchTextDirection: true
   );
 }
