@@ -8,7 +8,7 @@ void main() {
     ),
     home: Scaffold(
       appBar: AppBar(
-        title: Text('导航22R标题'),
+        title: Text('导航1R标题'),
           backgroundColor:Colors.blue
       ),
       body: Column(
