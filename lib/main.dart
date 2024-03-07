@@ -10,8 +10,8 @@ void main() {
       appBar: AppBar(title: Text('导航1R标题'), backgroundColor: Colors.blue),
       body: Column(
         children: [
-          // Expanded(child: MyApp())
-          MyApp()
+          Expanded(child: MyApp())
+          // MyApp()
         ],
       ),
     ),
@@ -52,12 +52,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // print(sourceArr);
-    return SizedBox(
-        height: 220, child: ListView(shrinkWrap: true,
-
-        // children: _initArray()
-
-      children: _mapInitArray(),
-    ));
+    // return SizedBox(
+    //     height: 220, child: ListView(shrinkWrap: true,
+    //
+    //     // children: _initArray()
+    //
+    //   children: _mapInitArray(),
+    // ));
+    
+    return ListView.builder(
+      itemCount: sourceArr.length,
+      itemBuilder: (contex, i ){
+        
+        return ListTile(
+          leading: Image.network(sourceArr[i]['image']),
+          title: Text(sourceArr[i]['title']),
+          subtitle: Text(sourceArr[i]['intro']),
+        );
+      },
+    );
   }
 }
