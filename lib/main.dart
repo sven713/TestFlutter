@@ -23,12 +23,19 @@ class MyApp extends StatelessWidget {
 
   List<Widget> _initArr() {
     List<Widget> res = [];
-    for (var i = 0; i < 20; i++) {
+    for (var i = 0; i < sourceArr.length; i++) {
       res.add(Container(
-        alignment: Alignment.center,
-        decoration: BoxDecoration(color: Colors.pink),
-        child: Text('范德萨发生$i'),
-      ));
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+              // color: Colors.pink,
+              border: Border.all(color: Colors.black12)),
+          child: Column(
+            children: [
+              Image.network(sourceArr[i]['image']),
+              SizedBox(height: 10),
+              Text(sourceArr[i]['title']),
+            ],
+          )));
     }
     return res;
   }
@@ -37,12 +44,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // print(sourceArr);
 
-    return GridView.extent(
-        // crossAxisCount: 4,
-        maxCrossAxisExtent: 130,
+    return GridView.count(
+        crossAxisCount: 2,
+        // maxCrossAxisExtent: 130,
         children: _initArr(),
         padding: EdgeInsets.all(10), // 容器边框
         crossAxisSpacing: 10,
+        childAspectRatio: 1.2,
         mainAxisSpacing: 10);
   }
 }
