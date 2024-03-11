@@ -6,26 +6,46 @@ void main() {
     theme: ThemeData(
       primarySwatch: Colors.yellow,
     ),
-    home: Scaffold(
-      appBar: AppBar(title: Text('导航1R标题'), backgroundColor: Colors.blue),
-      body: Column(
-        children: [
-          Expanded(child: MyApp())
-          // MyApp()
-        ],
-      ),
-    ),
+    home: Tabs()
   ));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
-  
+
+
+class Tabs extends StatefulWidget {
+  const Tabs({super.key});
+
+  @override
+  State<Tabs> createState() => _TabsState();
+}
+
+class _TabsState extends State<Tabs> {
+  int _currentIdx = 0;
   @override
   Widget build(BuildContext context) {
-    // print(sourceArr);
-
-    return Text('首页');
+    return Scaffold(
+      appBar: AppBar(title: Text('导航1R标题'), backgroundColor: Colors.blue),
+      body: Text('文案'),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentIdx,
+        onTap: (index){
+          setState(() {
+            _currentIdx = index;
+          });
+        },
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home),
+              label: '首页'
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.home),
+              label: '分类'
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.home),
+              label: '设置'
+          ),
+        ],
+      ),
+    );
   }
 }
