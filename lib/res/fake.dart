@@ -60,4 +60,66 @@ List sourceArr = [
       "url": "wxd6ba7c5fd8e87993"
     }
   }
+  ,
+  {
+    "title": "雅思真经小白课",
+    "intro": "备战雅思建议先听这节课",
+    "image": "https://resource.gximg.cn/7ba5f2_lat2k8wo2.png",
+    "btn": {
+      "text": "去上课",
+      "product_type": "9999",
+      "url": "https://www.guixue.com/p/album/free/?id=1183"
+    }
+  },
+  {
+    "title": "Alevel题库大全",
+    "intro": "近20年真题，免费下载",
+    "image": "https://resource.gximg.cn/e2306d_lat2xmij13.png",
+    "btn": {
+      "text": "去学习",
+      "product_type": "9996",
+      "url": "wx56f3548fc83a1d72"
+    }
+  },
+  {
+    "title": "学为贵国际择校",
+    "intro": "查学校查资讯，一键预约探校",
+    "image": "https://resource.gximg.cn/f8cdd4_llulkhzn2.png",
+    "btn": {
+      "text": "去学习",
+      "product_type": "9996",
+      "url": "wxd6ba7c5fd8e87993"
+    }
+  }
+  ,
+  {
+    "title": "雅思真经小白课",
+    "intro": "备战雅思建议先听这节课",
+    "image": "https://resource.gximg.cn/7ba5f2_lat2k8wo2.png",
+    "btn": {
+      "text": "去上课",
+      "product_type": "9999",
+      "url": "https://www.guixue.com/p/album/free/?id=1183"
+    }
+  },
+  {
+    "title": "Alevel题库大全",
+    "intro": "近20年真题，免费下载",
+    "image": "https://resource.gximg.cn/e2306d_lat2xmij13.png",
+    "btn": {
+      "text": "去学习",
+      "product_type": "9996",
+      "url": "wx56f3548fc83a1d72"
+    }
+  },
+  {
+    "title": "学为贵国际择校",
+    "intro": "查学校查资讯，一键预约探校",
+    "image": "https://resource.gximg.cn/f8cdd4_llulkhzn2.png",
+    "btn": {
+      "text": "去学习",
+      "product_type": "9996",
+      "url": "wxd6ba7c5fd8e87993"
+    }
+  }
 ];

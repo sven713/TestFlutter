@@ -40,43 +40,17 @@ class MyApp extends StatelessWidget {
     return res;
   }
 
-  Widget _initItem(context, i) {
-    return Container(
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-          // color: Colors.pink,
-            border: Border.all(color: Colors.black12)),
-        child: Column(
-          children: [
-            Image.network(sourceArr[i]['image']),
-            SizedBox(height: 10),
-            Text(sourceArr[i]['title']),
-          ],
-        )
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     // print(sourceArr);
 
-    return GridView.builder(
-        // crossAxisCount: 2,
-        // // maxCrossAxisExtent: 130,
-        // children: _initArr(),
-
-        // crossAxisSpacing: 10,
-        // childAspectRatio: 1.2,
-        // mainAxisSpacing: 10
-      padding: EdgeInsets.all(10), // 容器边框
-      itemCount: sourceArr.length,
-      gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisSpacing: 10,
-        mainAxisSpacing: 10,
+    return GridView.count(
         crossAxisCount: 2,
-        childAspectRatio: 1
-      ),
-      itemBuilder: _initItem,
-    );
+        // maxCrossAxisExtent: 130,
+        children: _initArr(),
+        padding: EdgeInsets.all(10), // 容器边框
+        crossAxisSpacing: 10,
+        childAspectRatio: 1.2,
+        mainAxisSpacing: 10);
   }
 }
