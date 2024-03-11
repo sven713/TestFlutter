@@ -70,11 +70,12 @@ class MyApp extends StatelessWidget {
         // mainAxisSpacing: 10
       padding: EdgeInsets.all(10), // 容器边框
       itemCount: sourceArr.length,
-      gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate:  SliverGridDelegateWithMaxCrossAxisExtent(
         crossAxisSpacing: 10,
         mainAxisSpacing: 10,
-        crossAxisCount: 2,
-        childAspectRatio: 1
+        // crossAxisCount: 2,
+        childAspectRatio: 1,
+        maxCrossAxisExtent: 150
       ),
       itemBuilder: _initItem,
     );
